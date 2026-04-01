@@ -201,19 +201,19 @@ Check:
 
 Clone the following repository.
 
-- [https://github.com/koide55/-LetureWebApp001](https://github.com/koide55/-LetureWebApp001)
+- [https://github.com/koide55/LetureWebApp001](https://github.com/koide55/LetureWebApp001)
 
 ### Windows PowerShell
 
 ```powershell
-git clone https://github.com/koide55/-LetureWebApp001.git
+git clone https://github.com/koide55/LetureWebApp001.git
 cd -LetureWebApp001
 ```
 
 ### macOS Terminal
 
 ```bash
-git clone https://github.com/koide55/-LetureWebApp001.git
+git clone https://github.com/koide55/LetureWebApp001.git
 cd -LetureWebApp001
 ```
 
