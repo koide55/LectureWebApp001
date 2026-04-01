@@ -29,7 +29,7 @@ title: 第1回 Webアプリの基本と Flask 導入
 1. Web アプリの基本
 2. HTTP の基本
 3. Flask とは何か
-4. 教材アプリの起動
+4. GitHub から教材を取得する
 5. 画面を触って構造を確認
 6. コードの読み方
 7. 演習
@@ -138,10 +138,32 @@ POST /login
 
 ---
 
+# 教材の取得元
+
+教材は GitHub の public repository から取得する。
+
+- Repository:
+  - [https://github.com/koide55/-LetureWebApp001](https://github.com/koide55/-LetureWebApp001)
+
+授業では、この repository を手元に clone して使う。
+
+---
+
+# 最初に行うこと
+
+```bash
+git clone https://github.com/koide55/-LetureWebApp001.git
+cd -LetureWebApp001
+```
+
+このあとで Python 環境を作り、アプリを起動する。
+
+---
+
 # ディレクトリ構成
 
 ```text
-vuln-webapp/
+-LetureWebApp001/
   app/
     __init__.py
     routes.py
@@ -164,7 +186,8 @@ vuln-webapp/
 # 起動手順
 
 ```bash
-cd /Users/koide/Documents/Playground/vuln-webapp
+git clone https://github.com/koide55/-LetureWebApp001.git
+cd -LetureWebApp001
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -190,15 +213,18 @@ python3 run.py
 
 # 最初のハンズオン
 
-1. トップページを開く
-2. `Login` 画面へ移動する
-3. `alice / alicepass` でログインする
-4. `My Page` を確認する
-5. `Lab Settings` を開いてみる
-6. `Users`, `Board`, `Reflect`, `Ping` を一通り開く
+1. repository を clone する
+2. 仮想環境を作る
+3. 依存関係を入れる
+4. seed を実行する
+5. アプリを起動する
+6. トップページを開く
+7. `alice / alicepass` でログインする
+8. `My Page` と `Lab Settings` を開く
 
 観察ポイント:
 
+- どのコマンドで何をしているか
 - URL が変わる
 - 画面ごとに役割が違う
 - ログイン前後で見え方が変わる
@@ -376,6 +402,25 @@ user, error, cookie_value = attempt_login(
 ---
 
 # 演習 1
+## repository を取得して起動する
+
+次の手順を実行する。
+
+```bash
+git clone https://github.com/koide55/-LetureWebApp001.git
+cd -LetureWebApp001
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python3 -m app.db.seed
+python3 run.py
+```
+
+できたらブラウザでトップページを開く。
+
+---
+
+# 演習 2
 ## 画面とURLの対応を確認する
 
 次の表を埋める。
@@ -391,7 +436,7 @@ user, error, cookie_value = attempt_login(
 
 ---
 
-# 演習 2
+# 演習 3
 ## ルーティングを探す
 
 `app/routes.py` を開いて、次を探す。
@@ -410,7 +455,7 @@ user, error, cookie_value = attempt_login(
 
 ---
 
-# 演習 3
+# 演習 4
 ## テンプレートを読む
 
 次のテンプレートを開いて、共通点と違いを確認する。
@@ -427,7 +472,7 @@ user, error, cookie_value = attempt_login(
 
 ---
 
-# 演習 4
+# 演習 5
 ## コードを追う
 
 以下の問いに答える。
@@ -439,7 +484,7 @@ user, error, cookie_value = attempt_login(
 
 ---
 
-# 演習 5
+# 演習 6
 ## 動作確認
 
 ブラウザで次を試す。
