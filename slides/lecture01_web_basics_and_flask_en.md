@@ -143,7 +143,7 @@ Today's focus:
 The lab material is provided through a public GitHub repository.
 
 - Repository:
-  - [https://github.com/koide55/LetureWebApp001](https://github.com/koide55/LetureWebApp001)
+  - [https://github.com/koide55/LectureWebApp001](https://github.com/koide55/LectureWebApp001)
 
 In class, we will clone this repository to the local machine.
 
@@ -152,8 +152,8 @@ In class, we will clone this repository to the local machine.
 # First Step
 
 ```bash
-git clone https://github.com/koide55/LetureWebApp001.git
-cd LetureWebApp001
+git clone https://github.com/koide55/LectureWebApp001.git
+cd LectureWebApp001
 ```
 
 After that, create the Python environment and start the application.
@@ -163,7 +163,7 @@ After that, create the Python environment and start the application.
 # Directory Structure
 
 ```text
-LetureWebApp001/
+LectureWebApp001/
   app/
     __init__.py
     routes.py
@@ -186,8 +186,8 @@ Important files:
 # How to Start the Application
 
 ```bash
-git clone https://github.com/koide55/LetureWebApp001.git
-cd LetureWebApp001
+git clone https://github.com/koide55/LectureWebApp001.git
+cd LectureWebApp001
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -407,8 +407,8 @@ At this stage:
 Run the following commands.
 
 ```bash
-git clone https://github.com/koide55/LetureWebApp001.git
-cd LetureWebApp001
+git clone https://github.com/koide55/LectureWebApp001.git
+cd LectureWebApp001
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

@@ -7,7 +7,7 @@ It supports both Windows and macOS.
 The course material is distributed through the following GitHub repository.
 
 - Repository:
-  - [https://github.com/koide55/LetureWebApp001](https://github.com/koide55/LetureWebApp001)
+  - [https://github.com/koide55/LectureWebApp001](https://github.com/koide55/LectureWebApp001)
 
 ---
 
@@ -201,20 +201,20 @@ Check:
 
 Clone the following repository.
 
-- [https://github.com/koide55/LetureWebApp001](https://github.com/koide55/LetureWebApp001)
+- [https://github.com/koide55/LectureWebApp001](https://github.com/koide55/LectureWebApp001)
 
 ### Windows PowerShell
 
 ```powershell
-git clone https://github.com/koide55/LetureWebApp001.git
-cd LetureWebApp001
+git clone https://github.com/koide55/LectureWebApp001.git
+cd LectureWebApp001
 ```
 
 ### macOS Terminal
 
 ```bash
-git clone https://github.com/koide55/LetureWebApp001.git
-cd LetureWebApp001
+git clone https://github.com/koide55/LectureWebApp001.git
+cd LectureWebApp001
 ```
 
 ---

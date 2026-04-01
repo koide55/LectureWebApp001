@@ -143,7 +143,7 @@ POST /login
 教材は GitHub の public repository から取得する。
 
 - Repository:
-  - [https://github.com/koide55/LetureWebApp001](https://github.com/koide55/LetureWebApp001)
+  - [https://github.com/koide55/LectureWebApp001](https://github.com/koide55/LectureWebApp001)
 
 授業では、この repository を手元に clone して使う。
 
@@ -152,7 +152,7 @@ POST /login
 # 最初に行うこと
 
 ```bash
-git clone https://github.com/koide55/LetureWebApp001.git
+git clone https://github.com/koide55/LectureWebApp001.git
 cd LetureWebApp001
 ```
 
@@ -163,7 +163,7 @@ cd LetureWebApp001
 # ディレクトリ構成
 
 ```text
-LetureWebApp001/
+LectureWebApp001/
   app/
     __init__.py
     routes.py
@@ -186,8 +186,8 @@ LetureWebApp001/
 # 起動手順
 
 ```bash
-git clone https://github.com/koide55/LetureWebApp001.git
-cd LetureWebApp001
+git clone https://github.com/koide55/LectureWebApp001.git
+cd LectureWebApp001
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -407,8 +407,8 @@ user, error, cookie_value = attempt_login(
 次の手順を実行する。
 
 ```bash
-git clone https://github.com/koide55/LetureWebApp001.git
-cd LetureWebApp001
+git clone https://github.com/koide55/LectureWebApp001.git
+cd LectureWebApp001
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

@@ -201,7 +201,7 @@ python3 --version
 
 以下の repository を clone します。
 
-- [https://github.com/koide55/LetureWebApp001](https://github.com/koide55/LetureWebApp001)
+- [https://github.com/koide55/LectureWebApp001](https://github.com/koide55/LectureWebApp001)
 
 ### Windows PowerShell
 
