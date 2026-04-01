@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Reflected XSS Demo</h2>
+<p>
+  Display mode:
+  <strong>{{ "unsafe (reflected XSS demo)" if reflected_xss_enabled else "safe (autoescaped)" }}</strong>
+</p>
+
+<form action="{{ url_for('main.reflect') }}" method="get" class="stack">
+  <label for="message">Message</label>
+  <input id="message" name="message" type="text" value="{{ message }}" placeholder="hello">
+  <button type="submit">Show message</button>
+</form>
+
+{% if message %}
+<h3>Rendered output</h3>
+{% if reflected_xss_enabled %}
+<div class="post-body">{{ message | safe }}</div>
+{% else %}
+<div class="post-body">{{ message }}</div>
+{% endif %}
+{% endif %}
+{% endblock %}

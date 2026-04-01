@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>User Search</h2>
+<p>
+  Search mode:
+  <strong>{{ "unsafe (SQLi demo)" if vuln_sqli_enabled else "safe (parameterized query)" }}</strong>
+</p>
+
+<form action="{{ url_for('main.users') }}" method="post" class="stack">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+  <label for="keyword">Username contains</label>
+  <input id="keyword" name="keyword" type="text" value="{{ keyword }}" placeholder="ali">
+  <button type="submit">Search</button>
+</form>
+
+{% if unsafe_query %}
+<h3>Executed Query</h3>
+<pre>{{ unsafe_query }}</pre>
+{% endif %}
+
+{% if results %}
+<h3>Results</h3>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in results %}
+    <tr>
+      <td>{{ user.id }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.role }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% elif keyword %}
+<p>No users matched.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Lab Settings</h2>
+<p>Toggle the current browser's lab behavior from one place.</p>
+
+<section class="posts">
+  <article class="post">
+    <h3>Authentication</h3>
+    <p>Current mode: <strong>{{ auth_mode }}</strong></p>
+    <form action="{{ url_for('main.switch_auth') }}" method="post" class="auth-switch">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <label for="auth_mode_settings">Auth mode</label>
+      <select id="auth_mode_settings" name="auth_mode">
+        <option value="cookie" {% if auth_mode == "cookie" %}selected{% endif %}>cookie</option>
+        <option value="server_session" {% if auth_mode == "server_session" %}selected{% endif %}>server_session</option>
+      </select>
+      <button type="submit">Apply</button>
+    </form>
+  </article>
+
+  <article class="post">
+    <h3>CSRF</h3>
+    <p>Current mode: <strong>{{ csrf_mode }}</strong></p>
+    <form action="{{ url_for('main.switch_csrf') }}" method="post" class="auth-switch">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <label for="csrf_mode_settings">CSRF protection</label>
+      <select id="csrf_mode_settings" name="csrf_mode">
+        <option value="disabled" {% if csrf_mode == "disabled" %}selected{% endif %}>disabled</option>
+        <option value="enabled" {% if csrf_mode == "enabled" %}selected{% endif %}>enabled</option>
+      </select>
+      <button type="submit">Apply</button>
+    </form>
+  </article>
+
+  <article class="post">
+    <h3>Stored XSS</h3>
+    <p>Current mode: <strong>{{ stored_xss_mode }}</strong></p>
+    <form action="{{ url_for('main.switch_stored_xss') }}" method="post" class="auth-switch">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <label for="stored_xss_mode_settings">Stored XSS mode</label>
+      <select id="stored_xss_mode_settings" name="stored_xss_mode">
+        <option value="safe" {% if stored_xss_mode == "safe" %}selected{% endif %}>safe</option>
+        <option value="vulnerable" {% if stored_xss_mode == "vulnerable" %}selected{% endif %}>vulnerable</option>
+      </select>
+      <button type="submit">Apply</button>
+    </form>
+  </article>
+
+  <article class="post">
+    <h3>Reflected XSS</h3>
+    <p>Current mode: <strong>{{ reflected_xss_mode }}</strong></p>
+    <form action="{{ url_for('main.switch_reflected_xss') }}" method="post" class="auth-switch">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <label for="reflected_xss_mode_settings">Reflected XSS mode</label>
+      <select id="reflected_xss_mode_settings" name="reflected_xss_mode">
+        <option value="safe" {% if reflected_xss_mode == "safe" %}selected{% endif %}>safe</option>
+        <option value="vulnerable" {% if reflected_xss_mode == "vulnerable" %}selected{% endif %}>vulnerable</option>
+      </select>
+      <button type="submit">Apply</button>
+    </form>
+  </article>
+
+  <article class="post">
+    <h3>SQL Injection</h3>
+    <p>Current mode: <strong>{{ sqli_mode }}</strong></p>
+    <form action="{{ url_for('main.switch_sqli') }}" method="post" class="auth-switch">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <label for="sqli_mode_settings">SQL injection mode</label>
+      <select id="sqli_mode_settings" name="sqli_mode">
+        <option value="safe" {% if sqli_mode == "safe" %}selected{% endif %}>safe</option>
+        <option value="vulnerable" {% if sqli_mode == "vulnerable" %}selected{% endif %}>vulnerable</option>
+      </select>
+      <button type="submit">Apply</button>
+    </form>
+  </article>
+
+  <article class="post">
+    <h3>Command Injection</h3>
+    <p>Current mode: <strong>{{ command_injection_mode }}</strong></p>
+    <form action="{{ url_for('main.switch_command_injection') }}" method="post" class="auth-switch">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <label for="command_injection_mode_settings">Command injection mode</label>
+      <select id="command_injection_mode_settings" name="command_injection_mode">
+        <option value="safe" {% if command_injection_mode == "safe" %}selected{% endif %}>safe</option>
+        <option value="vulnerable" {% if command_injection_mode == "vulnerable" %}selected{% endif %}>vulnerable</option>
+      </select>
+      <button type="submit">Apply</button>
+    </form>
+  </article>
+</section>
+{% endblock %}

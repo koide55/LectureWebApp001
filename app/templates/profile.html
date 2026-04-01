@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Profile</h2>
+<form action="{{ url_for('main.profile') }}" method="post" class="stack">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+
+  <label for="display_name">Display name</label>
+  <input id="display_name" name="display_name" type="text" value="{{ user.display_name }}" required>
+
+  <label for="bio">Bio</label>
+  <textarea id="bio" name="bio" rows="5">{{ user.bio }}</textarea>
+
+  <button type="submit">Save profile</button>
+</form>
+
+<h3>Current profile</h3>
+<p>Username: {{ user.username }}</p>
+<p>Display name: {{ user.display_name }}</p>
+<pre>{{ user.bio }}</pre>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Login</h2>
+<form action="{{ url_for('main.login') }}" method="post" class="stack">
+  <label for="username">Username</label>
+  <input id="username" name="username" type="text" autocomplete="username" required>
+
+  <label for="password">Password</label>
+  <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+  <button type="submit">Login</button>
+</form>
+
+<h3>Default users</h3>
+<ul>
+  <li>alice / alicepass</li>
+  <li>bob / bobpass</li>
+  <li>admin / adminpass</li>
+</ul>
+{% endblock %}

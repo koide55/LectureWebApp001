@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Ping</h2>
+<p>
+  Execution mode:
+  <strong>{{ "unsafe (command injection demo)" if command_injection_enabled else "safe (validated subprocess)" }}</strong>
+</p>
+<p><a href="{{ url_for('main.lab_settings') }}">Change command injection mode in Lab Settings</a></p>
+<form action="{{ url_for('main.ping') }}" method="post" class="stack">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+  <label for="host">Host</label>
+  <input id="host" name="host" type="text" value="{{ host }}" placeholder="example.com" required>
+  <button type="submit">Run ping</button>
+</form>
+
+{% if output is not none %}
+<h3>Result</h3>
+<p>Status: {{ "success" if success else "failure" }}</p>
+{% if executed_command %}
+<p>Executed command:</p>
+<pre>{{ executed_command }}</pre>
+{% endif %}
+<pre>{{ output }}</pre>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>My Page</h2>
+<p>User ID: {{ current_user.id }}</p>
+<p>Username: {{ current_user.username }}</p>
+<p>Display name: {{ current_user.display_name }}</p>
+<p>Role: {{ current_user.role }}</p>
+<pre>{{ current_user.bio }}</pre>
+
+<form action="{{ url_for('main.logout') }}" method="post">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+  <button type="submit">Logout</button>
+</form>
+{% endblock %}

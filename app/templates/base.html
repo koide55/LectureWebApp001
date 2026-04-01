@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or "Lecture Web App" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <header>
+      <h1>Lecture Web App</h1>
+      <p>
+        Auth: <strong>{{ auth_mode }}</strong> /
+        CSRF: <strong>{{ csrf_mode }}</strong> /
+        SQLi: <strong>{{ sqli_mode }}</strong> /
+        Cmd Inj: <strong>{{ command_injection_mode }}</strong> /
+        Stored XSS: <strong>{{ stored_xss_mode }}</strong> /
+        Reflected XSS: <strong>{{ reflected_xss_mode }}</strong>
+      </p>
+      <nav>
+        <a href="{{ url_for('main.index') }}">Home</a>
+        <a href="{{ url_for('main.me') }}">My Page</a>
+        <a href="{{ url_for('main.profile') }}">Profile</a>
+        <a href="{{ url_for('main.users') }}">Users</a>
+        <a href="{{ url_for('main.board') }}">Board</a>
+        <a href="{{ url_for('main.reflect') }}">Reflect</a>
+        <a href="{{ url_for('main.ping') }}">Ping</a>
+        <a href="{{ url_for('main.lab_settings') }}">Lab Settings</a>
+        <a href="{{ url_for('main.admin') }}">Admin</a>
+        <a href="{{ url_for('main.debug_session') }}">Debug</a>
+      </nav>
+      {% if current_user %}
+      <p>Logged in as {{ current_user.username }} ({{ current_user.role }})</p>
+      <p><a href="{{ url_for('main.lab_settings') }}">Change lab modes in Lab Settings</a></p>
+      {% endif %}
+    </header>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+      <section>
+        {% for category, message in messages %}
+        <div class="flash flash-{{ category }}">{{ message }}</div>
+        {% endfor %}
+      </section>
+      {% endif %}
+    {% endwith %}
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

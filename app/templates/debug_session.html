@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Debug Session</h2>
+<h3>Cookies</h3>
+<pre>{{ cookie_dump | tojson(indent=2) }}</pre>
+
+<h3>Session</h3>
+<pre>{{ session_dump | tojson(indent=2) }}</pre>
+
+<h3>Resolved User</h3>
+<pre>{{ resolved_user }}</pre>
+
+<h3>Default Auth Mode</h3>
+<pre>{{ default_auth_mode }}</pre>
+
+<h3>Default CSRF Mode</h3>
+<pre>{{ default_csrf_mode }}</pre>
+
+<h3>Default Command Injection Mode</h3>
+<pre>{{ default_command_injection_mode }}</pre>
+
+<h3>Default Reflected XSS Mode</h3>
+<pre>{{ default_reflected_xss_mode }}</pre>
+
+<h3>Default SQLi Mode</h3>
+<pre>{{ default_sqli_mode }}</pre>
+
+<h3>Default Stored XSS Mode</h3>
+<pre>{{ default_stored_xss_mode }}</pre>
+{% endblock %}
