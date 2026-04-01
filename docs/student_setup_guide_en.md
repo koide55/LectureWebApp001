@@ -7,7 +7,7 @@ It supports both Windows and macOS.
 The course material is distributed through the following GitHub repository.
 
 - Repository:
-  - [https://github.com/koide55/-LetureWebApp001](https://github.com/koide55/-LetureWebApp001)
+  - [https://github.com/koide55/LetureWebApp001](https://github.com/koide55/LetureWebApp001)
 
 ---
 
