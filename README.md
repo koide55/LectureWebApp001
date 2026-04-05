@@ -2,6 +2,22 @@
 
 Flask based lecture scaffold for authentication and web security exercises.
 
+## Student setup guides
+
+- Japanese: [docs/student_setup_guide_ja.md](docs/student_setup_guide_ja.md)
+- English: [docs/student_setup_guide_en.md](docs/student_setup_guide_en.md)
+
+## Advanced exercises
+
+- Japanese: [docs/advanced_exercises_ja.md](docs/advanced_exercises_ja.md)
+- English: [docs/advanced_exercises_en.md](docs/advanced_exercises_en.md)
+- Handout Japanese: [docs/advanced_exercises_handout_ja.md](docs/advanced_exercises_handout_ja.md)
+- Handout English: [docs/advanced_exercises_handout_en.md](docs/advanced_exercises_handout_en.md)
+
+## Lecture slides
+
+- Slide index: [slides/README.md](slides/README.md)
+
 ## Setup
 
 ```bash

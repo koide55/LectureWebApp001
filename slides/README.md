@@ -22,3 +22,14 @@ This directory contains the slide decks for the 7-session web application securi
   - [../docs/student_setup_guide_ja.md](../docs/student_setup_guide_ja.md)
   - [../docs/student_setup_guide_en.md](../docs/student_setup_guide_en.md)
 
+## PDF export tips
+
+- The slide decks are adjusted for 16:9 PDF export with Marp.
+- Recommended export example:
+
+```bash
+marp slides/lecture01_web_basics_and_flask.md --pdf
+```
+
+- If you want to export all slides, run the command once per file.
+- When code blocks or tables feel dense, split the slide instead of shrinking the font further.

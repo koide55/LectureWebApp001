@@ -2,6 +2,42 @@
 marp: true
 theme: default
 paginate: true
+size: 16:9
+style: |
+  section {
+    font-size: 28px;
+    padding: 52px;
+  }
+  h1 {
+    font-size: 1.7em;
+    margin-bottom: 0.2em;
+  }
+  h2 {
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+  h3 {
+    font-size: 0.95em;
+  }
+  p, li {
+    line-height: 1.35;
+  }
+  ul, ol {
+    margin-top: 0.3em;
+  }
+  table {
+    font-size: 0.72em;
+  }
+  code {
+    font-size: 0.88em;
+  }
+  pre code {
+    font-size: 0.72em;
+    line-height: 1.25;
+  }
+  blockquote {
+    font-size: 0.8em;
+  }
 title: Lecture 2 Login Logout and Authentication Basics
 ---
 
