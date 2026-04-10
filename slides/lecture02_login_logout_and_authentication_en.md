@@ -429,6 +429,11 @@ Check:
 - Where the browser moves after login
 - What changes after logout
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write 1-2 short sentences about the redirect after login and the change after logout
+
 ---
 
 # Hands-On 2
@@ -444,6 +449,11 @@ Check:
 
 - What message is displayed
 - How the page transition differs from a successful login
+
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write at least one failure message you observed
 
 ---
 
@@ -463,6 +473,11 @@ Think about:
 - Why the result changes
 - Which code creates that difference
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write 2 short sentences about the difference between logged-out and logged-in behavior
+
 ---
 
 # Exercise 1
@@ -475,6 +490,12 @@ Look at `app/routes.py` and answer:
 3. Where the browser moves after success
 4. What happens after failure
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: Answer all 4 questions with numbers
+
 ---
 
 # Exercise 2
@@ -486,6 +507,12 @@ Look at `app/services/auth_service.py` and explain:
 2. What happens when authentication fails
 3. What is returned when authentication succeeds
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-5 short lines
+- Required items: The result for each condition and the related function or process
+
 ---
 
 # Exercise 3
@@ -496,6 +523,12 @@ Look at `app/auth/decorators.py` and answer:
 1. When `current_user()` is called
 2. What is returned when the user is not logged in
 3. What is returned when the user is logged in
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -510,6 +543,12 @@ Write down the following mappings.
 | `/logout` |  |  |
 | `/me` |  |  |
 | `/admin` |  |  |
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4 short lines
+- Required items: Copy the table and fill in all 4 rows
 
 ---
 
@@ -536,6 +575,12 @@ Write down the following mappings.
 1. List 3 functions related to authentication from `app/routes.py`
 2. Explain in writing why `/me` cannot be viewed while logged out
 3. Describe the difference between authentication and authorization in your own words
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 6-8 short lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 

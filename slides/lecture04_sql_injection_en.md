@@ -309,6 +309,11 @@ Check:
 - How the results change
 - Whether SQL is displayed
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write one sentence about what you observed in safe mode
+
 ---
 
 # Hands-On 2
@@ -324,6 +329,11 @@ Check:
 - Whether the SQL statement appears on the page
 - Whether the input value is inserted directly into the SQL
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write one sentence about what you observed in vulnerable mode
+
 ---
 
 # Hands-On 3
@@ -337,6 +347,12 @@ Fill in the table.
 | How input is handled |  |  |
 | Risk |  |  |
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-4 short lines
+- Required items: Copy the table and fill in all 3 rows
+
 ---
 
 # Exercise 1
@@ -347,6 +363,12 @@ Answer:
 1. Where is the SQL string built?
 2. Where does `keyword` appear?
 3. Why is this dangerous?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -359,6 +381,12 @@ Answer:
 2. Where is the value passed?
 3. Why does this reduce risk?
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
+
 ---
 
 # Exercise 3
@@ -370,6 +398,12 @@ Look at `app/routes.py` and explain:
 2. Where the results are passed to the template
 3. What `unsafe_query` is for
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-5 short lines
+- Required items: Answer all 3 questions with numbers
+
 ---
 
 # Exercise 4
@@ -380,6 +414,12 @@ Answer:
 1. What is the core problem in SQL injection?
 2. Why is string concatenation dangerous?
 3. What is the advantage of placeholders?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -406,6 +446,12 @@ Answer:
 1. Write three differences between `search_users_safe()` and `search_users_unsafe()`
 2. Explain why displaying the SQL query matters in vulnerable mode
 3. Write why placeholders are important
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 6-8 short lines
+- Required items: 3 points for Question 1, and at least 2 sentences for Questions 2 and 3
 
 ---
 

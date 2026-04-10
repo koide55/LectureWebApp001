@@ -393,6 +393,11 @@ flowchart TD
 5. Change the mode to `server_session`
 6. Log in again and open `/debug/session`
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write one difference you observed between the two authentication modes
+
 ---
 
 # Hands-On 2
@@ -406,6 +411,12 @@ Fill in the table.
 | What the server checks |  |  |
 | How the current user is resolved |  |  |
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-4 short lines
+- Required items: Copy the table and fill in all 3 rows
+
 ---
 
 # Exercise 1
@@ -416,6 +427,12 @@ Answer:
 1. What does `login()` store?
 2. What does `logout()` do?
 3. How does `get_current_user()` find the user?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -428,6 +445,12 @@ Answer:
 2. What does `logout()` remove?
 3. Which value does `get_current_user()` use to find the user?
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
+
 ---
 
 # Exercise 3
@@ -439,6 +462,12 @@ Explain:
 2. The role of `get_auth_backend()`
 3. Why separating backends makes the app easier to understand as teaching material
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: 2 role explanations and 1 benefit of separation
+
 ---
 
 # Exercise 4
@@ -449,6 +478,12 @@ Answer:
 1. What is one advantage of cookie-based authentication?
 2. What is one advantage of server-session-based authentication?
 3. Why are cookies still involved in both approaches?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -475,6 +510,12 @@ Answer:
 1. Write three differences between cookie-based and server-session-based authentication
 2. Write two similarities between `cookie_auth.py` and `server_session_auth.py`
 3. Explain what should be observed on `/debug/session`
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 6-8 short lines
+- Required items: 3 points for Question 1, 2 points for Question 2, and at least 2 observation items for Question 3
 
 ---
 

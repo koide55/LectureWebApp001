@@ -342,6 +342,11 @@ can be switched in `lab-settings`
 5. Then switch to `vulnerable`
 6. Compare the output
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write one sentence about the visible difference between safe and vulnerable mode
+
 ---
 
 # Hands-On 2
@@ -353,6 +358,11 @@ can be switched in `lab-settings`
 4. Check the display
 5. Switch to `vulnerable`
 6. Compare the display again
+
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write one sentence about the difference in how the post is displayed
 
 ---
 
@@ -370,6 +380,11 @@ Check:
 - Whether the action succeeds or fails
 - What creates that difference
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write 1-2 short sentences about the difference between CSRF protection ON and OFF
+
 ---
 
 # Exercise 1
@@ -380,6 +395,12 @@ Answer:
 1. Where is `message` received?
 2. Where is `|safe` used?
 3. Why can that become dangerous?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -392,6 +413,12 @@ Answer:
 2. Where is the post body displayed?
 3. Why does this become stored XSS?
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
+
 ---
 
 # Exercise 3
@@ -403,6 +430,12 @@ Answer:
 2. What happens when the token is invalid?
 3. Why is the hidden field needed?
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
+
 ---
 
 # Exercise 4
@@ -413,6 +446,12 @@ Answer:
 1. What does XSS abuse?
 2. What does CSRF abuse?
 3. Why do they require different defenses?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -439,6 +478,12 @@ Answer:
 1. Explain the difference between reflected XSS and stored XSS
 2. Write why `|safe` can become dangerous
 3. Write why a CSRF token is needed
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 6-8 short lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 

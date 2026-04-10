@@ -265,6 +265,11 @@ What to observe:
 - How each page has a different role
 - How the behavior changes before and after login
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write 1-2 short sentences about whether the app started and which page you opened
+
 ---
 
 # Code Entry Point 1
@@ -454,6 +459,12 @@ python3 run.py
 
 Then open the top page in your browser.
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 1-2 short sentences
+- Required items: 1. Whether the app started successfully 2. The URL you opened 3. Any error message if startup failed
+
 ---
 
 # Exercise 2
@@ -469,6 +480,12 @@ Fill in the table below.
 | Profile |  |  |
 | Board |  |  |
 | Lab Settings |  |  |
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-5 short lines
+- Required items: Copy the table and fill in all 6 rows
 
 ---
 
@@ -489,6 +506,12 @@ Check:
 - Whether it uses `GET` or `POST`
 - Which template it returns
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: For each URL, write the function name, HTTP method, and template name
+
 ---
 
 # Exercise 4
@@ -506,6 +529,12 @@ Look at:
 - Forms
 - The displayed data
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-5 short lines
+- Required items: Write at least 2 similarities and 1 difference
+
 ---
 
 # Exercise 5
@@ -517,6 +546,12 @@ Answer the following questions.
 2. Where is the display logic for `/login`?
 3. Where is the submission logic for `/login`?
 4. Which template is used by `/me`?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4 numbered lines
+- Required items: Answer all 4 questions with numbers
 
 ---
 
@@ -534,6 +569,12 @@ Think about:
 
 - What changes before and after login
 - Why that change happens
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-5 short lines
+- Required items: 1. Result before login 2. Result after login 3. Reason for the difference
 
 ---
 
@@ -567,6 +608,12 @@ In short:
 1. Read `app/routes.py` and write down at least 5 URL-to-function mappings
 2. Read `app/templates/base.html` and list the elements shared by all pages
 3. Think about why `/login` uses both `GET` and `POST`
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 6-8 short lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 

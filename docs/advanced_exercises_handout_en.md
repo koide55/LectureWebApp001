@@ -55,6 +55,20 @@ Include the following items in your submission.
 - Whether testing was performed
 - Whether the explanation is concise and logical
 
+## Moodle Submission Guide
+
+| Exercise | Response type | Required items |
+|---|---|---|
+| B1-B4 | Essay | Exercise number, target files, answer or comparison result |
+| I1-I4 | File upload + essay | Exercise number, modified files, implementation summary, testing results |
+| A1-A4 | File upload + essay | Exercise number, modified files, design intent, testing results, defense explanation |
+
+Writing guide for essay answers:
+
+- Beginner: 4-6 short lines with numbered answers
+- Intermediate: 6-10 short lines, separating implementation and testing
+- Advanced: 8-12 short lines, separating problem, implementation, and defense
+
 ## Exercise List
 
 | Level | Exercise | Theme |
@@ -255,4 +269,3 @@ Tasks:
 
 - Basic exercises: lecture slides and standard teaching materials
 - Detailed version: `docs/advanced_exercises_en.md`
-

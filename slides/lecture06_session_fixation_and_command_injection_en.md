@@ -350,6 +350,11 @@ Check:
 - Input restrictions
 - Whether `Executed command` appears
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write one sentence about the main feature of safe mode
+
 ---
 
 # Hands-On 2
@@ -365,6 +370,11 @@ Check:
 - Whether `Executed command` is displayed
 - Whether you can explain why it is dangerous
 
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write one sentence about the main feature of vulnerable mode
+
 ---
 
 # Hands-On 3
@@ -375,6 +385,11 @@ Think about the following.
 1. What is dangerous about reusing the same session ID after login?
 2. Why should a new ID be created at login?
 3. Which side is the current app closer to?
+
+Moodle answer instructions:
+
+- Response type: No submission required
+- If the instructor collects it: Write only your answer to Question 3 in one sentence
 
 ---
 
@@ -387,6 +402,12 @@ Answer:
 2. Why is `shell=True` dangerous?
 3. How does it differ from the safe version?
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
+
 ---
 
 # Exercise 2
@@ -397,6 +418,12 @@ Answer:
 1. Where is the input validated?
 2. Why is the command passed as a list?
 3. Why does that reduce risk?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3 numbered lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -409,6 +436,12 @@ Answer:
 2. Why is a random session ID necessary?
 3. What is important to prevent session fixation?
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-5 short lines
+- Required items: Answer all 3 questions with numbers
+
 ---
 
 # Exercise 4
@@ -419,6 +452,12 @@ Answer:
 1. What is the core problem in session fixation?
 2. What is the core problem in command injection?
 3. How are these two problems different?
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: Answer all 3 questions with numbers
 
 ---
 
@@ -445,6 +484,12 @@ Answer:
 1. Write three differences between `safe_ping` and `unsafe_ping`
 2. Write what is needed to prevent session fixation
 3. Explain in writing why `shell=True` is dangerous
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 6-8 short lines
+- Required items: 3 points for Question 1, and at least 2 sentences for Questions 2 and 3
 
 ---
 

@@ -26,6 +26,20 @@ The goal is not only to observe the behavior of the existing teaching app, but a
 4. Testing results
 5. What you learned
 
+## Moodle Submission Guide
+
+| Exercise | Response type | Required items |
+|---|---|---|
+| Beginner 1-4 | Essay | Exercise number, target files, answer or comparison result |
+| Intermediate 1-4 | File upload + essay | Exercise number, modified files, implementation summary, testing results |
+| Advanced 1-4 | File upload + essay | Exercise number, modified files, design intent, testing results, defense explanation |
+
+Writing guide for essay answers:
+
+- Beginner: 4-6 short lines with numbered answers
+- Intermediate: 6-10 short lines, separating implementation and testing
+- Advanced: 8-12 short lines, separating problem, implementation, and defense
+
 ## Beginner
 
 The beginner section focuses on reading existing code and making small changes.

@@ -351,6 +351,12 @@ What to observe:
 - Who is allowed
 - Where the request is stopped
 
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 3-5 short lines
+- Required items: 1. Result for `alice` 2. Result for `admin` 3. Where the control happens
+
 ---
 
 # Integrated Exercise 2
@@ -372,6 +378,12 @@ Targets:
 - `/ping`
 - `/admin`
 
+Moodle answer instructions:
+
+- Response type: Multiple choice or essay
+- Recommended for Moodle: Matching or classification question with one category per feature
+- Required items: Classify all 6 targets
+
 ---
 
 # Integrated Exercise 3
@@ -385,6 +397,12 @@ Decide which defense is effective against which issue.
 - Session ID regeneration
 - `shell=False`
 - `role_required`
+
+Moodle answer instructions:
+
+- Response type: Multiple choice or essay
+- Recommended for Moodle: Matching question that connects each defense to a vulnerability
+- Required items: Write the main vulnerability addressed by each defense
 
 ---
 
@@ -431,6 +449,12 @@ When reading code, check these points.
 - Design which role is required
 - Protect it on the server side
 - Briefly explain the expected vulnerability and the defense
+
+Moodle answer instructions:
+
+- Response type: Essay or file upload
+- Suggested length: 6-8 short lines
+- Required items: 1. Page name 2. Required role 3. Protection method 4. Expected vulnerability and defense
 
 ---
 
