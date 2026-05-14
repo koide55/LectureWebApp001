@@ -378,6 +378,33 @@ Moodle answer instructions:
 ---
 
 # Hands-On 3
+## Try an Actual Command Injection
+
+1. Set `Command injection mode` to `vulnerable`
+2. Open `/ping`
+3. First, enter `127.0.0.1` and run it
+4. Next, enter one of the following depending on your environment
+5. Compare the `Executed command` and the result
+6. Try the same input again in `safe` mode
+
+Example input:
+
+- macOS / Linux: `127.0.0.1; whoami`
+- Windows: `127.0.0.1 & whoami`
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: Result of normal input, result of injection input, difference in `Executed command`, result in safe mode
+
+Note:
+
+- Use this input only in the local teaching app
+
+---
+
+# Hands-On 4
 ## Think About Session Fixation
 
 Think about the following.

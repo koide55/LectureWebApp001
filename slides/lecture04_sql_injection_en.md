@@ -355,6 +355,28 @@ Moodle answer instructions:
 
 ---
 
+# Hands-On 4
+## Try an Actual SQL Injection
+
+1. Set `SQL injection mode` to `vulnerable`
+2. Open `/users`
+3. First, search for `alice`
+4. Next, search with `' OR 1=1 --`
+5. Compare the number of displayed users and the `Executed Query`
+6. Try the same input again in `safe` mode
+
+Moodle answer instructions:
+
+- Response type: Essay
+- Suggested length: 4-6 short lines
+- Required items: Result of normal input, result of injection input, difference in `Executed Query`, result in safe mode
+
+Note:
+
+- Use this input only in the local teaching app
+
+---
+
 # Exercise 1
 ## Read `search_users_unsafe()`
 
